@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        body {
-        background-color: rgb(135, 73, 243);
-        }
-        
-        .heading {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="heading">
-        <h2><b>DIABETIC RETINOPATHY DETECTION</b></h2>
-    </div>
 
-    <div>
-        <input type="file">
+    <div class="container">
+        <h1>Diabetic Retinopathy Detection</h1>
+        <div class="input-section">
+          <input type="file" id="image-input" accept="image/*">
+          <br>
+          <br>
+          <button id="prediction-btn">Predict</button>
+        </div>
+        <div class="output-section">
+          <img id="input-image" src="#" alt="Input Image">
+          <div id="output-box"></div>
+        </div>
     </div>
 </body>
 </html>
