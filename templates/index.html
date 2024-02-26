@@ -11,16 +11,19 @@
 
     <div class="container">
         <h1>Diabetic Retinopathy Detection</h1>
-        <div class="input-section">
-          <input type="file" id="image-input" accept="image/*">
+        <form method="POST" enctype="multipart/form-data">
+          <input type="file" id="image-input" name='file' accept="image/*">
           <br>
           <br>
           <button id="prediction-btn">Predict</button>
-        </div>
-        <div class="output-section">
-          <img id="input-image" src="#" alt="Input Image">
-          <div id="output-box"></div>
-        </div>
+        </form>
+        {% if message%}
+          <p>{{ message }}</p>
+        {% endif %}
+        {% if image_file %}
+          <img id="input-image" src="{{ image_file }}" alt="Uploaded Image">
+        {% endif %}
+        
     </div>
 </body>
 </html>

@@ -17,27 +17,13 @@ body {
     text-align: center;
     color: #000000;
   }
-  .input-section {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .output-section {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
+  
   #input-image {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
   }
-  #output-box {
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+  
   #prediction-btn {
     padding: 10px 20px;
     background-color: #007bff;
