@@ -105,7 +105,7 @@ def build_model():
 
     # # 5- stage
 
-    X = res_block(X, filter= [512,512,2048], stage= 5)
+    #X = res_block(X, filter= [512,512,2048], stage= 5)
 
     #Average Pooling
 
